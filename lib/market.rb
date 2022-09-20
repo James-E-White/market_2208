@@ -15,9 +15,9 @@ class Market
   end
 
   def vendors_that_sell(item)
-    @vendors.select { |vendor| vendor.inventory.key?(item)}
-
+    @vendors.select { |vendor| vendor.inventory.keys?(item)}
   end
+  
 end
 
 
