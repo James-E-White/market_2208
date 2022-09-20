@@ -15,10 +15,33 @@ class Market
   end
 
   def vendors_that_sell(item)
-    @vendors.select { |vendor| vendor.inventory.keys?(item)}
+    @vendors.select { |vendor| vendor.inventory.key?(item)}
   end
-  
+
+
+  def total_inventory
+    # create a new hash that stores all the vendors invnetory by item and quantity
+   total_inventory = Hash.new{ |name, quantity| }
+  end
 end
+
+
+
+
+
+
+
+
+
+
+  # def potential_revenue(potential_revenue)
+  #   @inventory * @quantity = potential_revenue.to_f
+
+
+
+
+
+
 
 
 # def vendor_names
